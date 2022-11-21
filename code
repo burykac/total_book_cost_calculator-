@@ -1,0 +1,8 @@
+book_cost = float(input("Wprowadź koszt książki: "))
+bookstore_discount_cost = book_cost - (book_cost * float(input("Wprowadź rabat w wartości dziesiętnej: ")))
+book_quantity = float(input("Wprowadź ilość zamówionych książek: "))
+shipment = (bookstore_discount_cost - 3) + ((book_quantity - 1) * 0.75)
+
+total_cost = (bookstore_discount_cost * book_quantity) + shipment
+
+print(f"{total_cost} zł")
